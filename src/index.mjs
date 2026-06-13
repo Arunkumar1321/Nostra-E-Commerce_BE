@@ -17,7 +17,7 @@ app.listen(process.env.PORT || 3000,()=>{
     console.log("Server Connected")
 })
 
-mongoose.connect(process.env.MONGO_URL).then(async()=>{
+mongoose.connect(process.env.MONGO_URI).then(async()=>{
     console.log("DBConnected")
 }).catch((err)=>{console.log("DB Connection failed",err)})
 
